@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+    /* - 가상선택자 - 
+    
+    */
+        /* 마우스가 닿으면 발생되는 css */
+        .list > li > a:hover {background-color : yellow;} /* 마우스가 닿으면 */
+
+        /* input의 포커스시 적용되는 css */
+        .inner > input:focus {background-color : yellow;} 
+        
+        /* 태그가 활성화시 적용되는 css */
+        .title:active {background-color: yellow;}
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <ul class="list">
+            <li><a>목록1</a></li>
+            <li>목록2</li>
+            <li>목록3</li>
+        </ul>
+    </div>
+
+    <div class="inner">
+        <input type="text" >
+    </div>
+
+    <p class="title">active</p>
+
+</body>
+</html>

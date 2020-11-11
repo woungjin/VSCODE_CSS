@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- 외부 스타일 -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 내부 스타일 -->
+    <style type="text/css">
+    p{color:red;};
+    </style>
+
+</head>
+<body>
+    <!-- 우선순위는 블록안에 바로 넣어둔게 빠르ㅏ -->
+
+    <p>내부스타일</p>
+    <span>외부스타일 시트</span>
+    
+    <!--인라인 스타일 -->
+    <p style="color:orange; font-size: large;">인라인시트</p>
+    <!-- └> 우선순위 1등 -->
+</body>
+</html>

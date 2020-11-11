@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style type="text/css">
+        /* 특정 속성을 지닌 태그를 선택하는 방법 */
+        input[name="ttt"] {color:blue;} /* input태그의 이름이 ttt에만 */
+        li[class*="col"] {color:red;} /* li속성의 col이름을 가진 모든클래스에게 */
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <input type="text" name="ttt" value="가">가 
+        <input type="text" name="ttt" value="나">나
+        <input type="text" name="ttt" value="다">다
+    </div>
+
+    <div>
+        <ul>
+            <li class="col-1">리스트1</li>
+            <li class="col-2">리스트2</li>
+            <li class="col-3">리스트3</li>
+            <li class="col-4">리스트4</li>
+        </ul> 
+    </div>
+
+</body>
+</html>

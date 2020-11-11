@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style type="text/css">
+        * {}                        /* 디자인 시작전에 전역선택자로 선언하고 시작한다 */
+        b {color:red;}            /* 모든 b태그에 적용하겟다 */
+        ul,li {list-style:none ;}   /* ul과 li에 동시 적용 */
+        #a1 {color: green;}
+        .b2 {color: salmon;}
+
+        .abox p {color : red;}    /* 공백 : .abox클래스 내부의 모든 것을 의미함 */
+        .bbox > p {color : blue;} /* 꺽세 : .bbox클래스의 바로 아래의 p태그만 의미 */
+    </style>
+
+</head>
+<body>
+    
+    <b>b태그 입니다</b>
+    <ul>
+        <li>다중선택자1</li>
+        <li>다중선택자2</li>
+    </ul>
+
+    <p id="a1">아이디 선택자 : #</p>
+    <p class="b2">클래스 선택자 : .</p>
+    <!-- 클래스가 가장 많이 사용된다 -->
+
+    <div class="abox">
+        <p>하위선택자1</p>
+        <p>하위선택자2</p>
+        <p></p>
+        <ul>
+            <li><p>하위선택자3</p></li>
+            <li><p>하위선택자4</p></li>
+        </ul>
+    </div>
+
+
+
+    <hr/ color="black">
+    <div class="bbox">
+        <p>자식선택자 > 1</p>
+        <p>자식선택자 > 2</p>
+        <ul>
+            <li><p>자신선택자 공백 1</p></li>
+            <li><p>자신선택자 공백 2</p></li>
+        </ul>
+    </div>
+
+</body>
+</html>
