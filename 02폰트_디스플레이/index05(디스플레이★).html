@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 블럭 -> 인라인 */
+        .list > .inner {display:inline} 
+        
+        /* 인라인 -> 블럭 */ 
+        .list > span,
+        .list > strong,
+        .list > small { display : block; }
+        
+        /* 인라인 블럭 : 줄바꿈은 안일어나고 , block의 크기 정렬 기능만을 사용할수 있게 해준다 */
+        .list a {
+            display: inline-block;
+            width : 100px;
+            height : 100px;
+            line-height: 100px; /* 높이와 line을 동일하게 두면 가운데로감 */
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        .box > {display : none;}
+    </style>
+
+</head>
+<body>
+    <!-- 디스플레이 : 블럭 -> 인라인 , 인라인 -> 블럭 -->
+    <div class="list">
+        <div class="inner">블럭</div>
+        <div class="inner">블럭</div>
+        <div class="inner">블럭</div>
+    </div>
+    
+    
+    <div class="list">
+        <span>인라인</span>
+        <strong>인라인</strong>
+        <small>인라인</small>
+    </div>
+    
+    
+        <div class="list">
+            <a href="#">inline</a>
+            <a href="#" >inline</a>
+            <a href="#">inline</a>
+        </div>
+
+    <div class="box">
+        아이디 비번을 확인하세요?
+    </div>
+        
+    
+</body> 
+</html>

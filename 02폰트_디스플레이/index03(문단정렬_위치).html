@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        /* 글자 위치 지정 */
+        p {border:1px solid #000;}  /* p태그에 테두리1px , 색상 #000 */
+        .tx1 {text-align: left;}
+        .tx2 {text-align: right;}
+        .tx3 {text-align: center;}
+
+        /* 비교되는 것끼리의 위치를 바꾸고 싶을때 사용 */
+        .tx4 img {vertical-align:top;}
+        .tx5 img {vertical-align:middle;}
+        .tx6 img {vertical-align:bottom;}
+
+        /* 박스높이와 line-height를 동일하게 맞추면 글자 가운데에 정렬된다   */
+        .box {height: 100px; line-height: 100px;} /* 글자를 가운데에 맞추는법 (중요) */
+
+    </style>
+</head>
+<body>
+
+    <p class="tx1">안녕하세요</p> 
+    <p class="tx2">안녕하세요</p>
+    <p class="tx3">안녕하세요</p>
+    
+    <!-- 같은칸 안에 비교대상이 있을때의 위치 정렬 방법 -->
+    <p class="tx4">
+        안녕1
+        <img src="img/css3.png">   
+    </p>
+    
+    <p class="tx5">
+        안녕2
+        <img src="img/html5.png" alt="이미지">
+    </p>
+
+    <p class="tx6">
+        안녕3
+        <img src="img/jquery.png" alt="이미지">
+    </p>
+    
+    <p class="box">
+        헬로우 박스
+    </p>
+
+</body>
+</html>

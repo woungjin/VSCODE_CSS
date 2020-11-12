@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul,li {list-style: none;}
+        .box li { 
+            display : inline-block;  /* lnline을 안쓰는 이유는 넓이도 같이주기 위해서이다  */
+            border : 1px solid #000;
+            width : 50px;
+            height : 50px;
+            line-height: 50px;
+            text-align : center;
+            border-width: 5px;
+            background-color: 777;
+            }
+        .box2 li a {
+            text-decoration : none;
+            color: yellow;
+            
+        }
+
+        /* 메뉴만들기 문제 */
+        .box2 {
+            background-color: black;
+            text-align: center;
+        }
+
+        .box2 li {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            color: white;
+            line-height: 50px;
+        }
+        .box2 li:hover {background-color: gray;}
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul class="box">
+            <li><a href="www.naver.com">메뉴1</a></li>
+            <li><a href="">메뉴2</a></li>
+            <li><a href="">메뉴3</a></li>
+            <li><a href="">메뉴4</a></li>
+            <li><a href="">메뉴5</a></li>
+        </ul>
+    </nav>
+    
+    <nav>
+        <ul class="box2">
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴2</a></li>
+            <li><a href="">메뉴3</a></li>
+            <li><a href="">메뉴4</a></li>
+            <li><a href="">메뉴5</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

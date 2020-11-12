@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        body {background-image: url(img/bg_grid.jpg) ;}
+        p {
+            /* 마진은 다른 상자와의 크기를 중첩되게 가진다 */
+            width: 600px;
+            min-height: 100px;
+            border:solid;
+            /* 위 오른쪽 아래 왼쪽 */
+            margin: 10px 10px 10px 10px;
+            /* 위 아래 좌우 */
+            margin: 20px 20px;
+            /* 같은 의미 */
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left : 20px;
+
+
+        }
+        
+        .ct { 
+            /* 매우 많이 사용되는 박스 가로 중앙정렬. 단 블록크기가 지정되어있어야 한다 */
+             margin: 0 auto;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <p class="ct">
+        마진은 요소의 바깥여백으로 박스와 마진박스의 여백이다
+        박스의 가로크기 width(600px) + margin(20px) + margin(20px) = 640px
+        마진은 상자끼리 겹치는게 가능하다 <!-- 패딩은 불가 -->
+    </p>
+
+    <p >
+        마진은 요소의 바깥여백으로 박스와 마진박스의 여백이다
+        박스의 가로크기 width(600px) + margin(20px) + margin(20px) = 640px
+        마진은 상자끼리 겹치는게 가능하다 <!-- 패딩은 불가 -->
+    </p>
+
+</body>
+</html>
