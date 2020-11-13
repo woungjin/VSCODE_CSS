@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        *{margin:0; padding: 0;}
+        .list-wrap {
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid #777;
+            position :relative;
+            padding : 10px;
+        }
+       
+        .list-img{
+            position: absolute; /* 이미지를 띄울요소에 absolute */
+            left: 10px;
+            top: 10px;
+        }
+        .list-img img {width: 50px;}
+        .list-content, .list-control { 
+            padding-left: 50px;
+            }
+        .list-content {
+            padding-top: 10px;
+        }
+        .list-content textarea {
+            width: 100%;
+            height: 200px;
+            box-sizing: border-box;
+            resize: vertical; /* horizontal : 수평으로만 텍스트가 늘어남, vertical : 수직으로만 늘어남 */
+            padding: 10px; /* 글 영역 안쪽여백 10 */  
+        }
+     
+        .list-control{ overflow: hidden; }
+        .list-input { float: left; }
+        .list-input input { display: block; }
+        .list-right{ float: right ; }
+
+        .title { padding-left: 60px; overflow: hidden; }
+        .title .title-left{ float: left; }
+        .title .title-right{ float: right; }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="list-wrap">
+        <div class="list-img">
+            <img src="img/bgimg.png" alt="붕">
+        </div>
+        <div class="list-content"> 
+            <textarea name="" id="" cols="30" rows="5" placeholder="댓글영역"></textarea>
+        </div>
+        <div class="list-control">
+            <div class="list-input">
+                <input type="text"> 
+                <input type="text">
+            </div>
+            <button type="button" class="list-right">등록하기</button>
+        </div>
+    </div>
+
+    <div class="list-wrap">
+        <div class="list-img">
+            <img src="img/bgimg.png" alt="붕">
+        </div>
+        <div class="title">
+            <div class="title-left">
+                <p><strong>제목 </strong></p>
+                <p><small>내용</small></p>
+            </div> 
+            <button type="button" class="title-right">수정</button>
+            <button type="button" class="title-right">삭제</button>
+        </div>  
+    </div>
+
+
+    
+</body>
+</html>

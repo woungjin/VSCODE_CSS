@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        .list {
+            width: 50%; margin: 0 auto; border: 1px solid;
+        }
+        .list .top ,
+        .list .mid,
+        .list .bot{
+            border: 1px solid;
+        }
+        .list .mid{padding: 20px 0;}
+        .inner {
+            overflow: hidden;
+        }
+        .inner .left {
+            border: 1px solid;
+            width: 50%;
+            box-sizing: border-box;
+            float: left;
+        }
+
+    </style>
+
+</head>
+<body>
+   
+    <div class="list">
+        <div class="top">탑</div>
+        <div class="mid">
+            <div class="inner">
+                <div class="left">좌측</div>
+                <div class="left">우측</div>
+            </div>
+        </div>
+        <div class="bot">바텀</div>
+    </div>
+
+</body>
+</html>

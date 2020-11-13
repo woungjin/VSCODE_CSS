@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style type="text/css">
+        *{margin: 0; padding: 0;}
+
+        .list {
+            margin: 0 auto;
+            width: 50%;
+            border:1px solid;
+            overflow: hidden;
+        }
+        .list .left {
+            float: left;
+            
+            width: 50%;
+            box-sizing: border-box ;
+        }
+
+        .left .top {
+        
+            padding-bottom: 50px;
+        }
+        .left .mid, .bot {
+   
+            overflow: hidden;
+        }
+        .left .mid_left {
+            float: left;
+        }
+        .left .mid_right {
+            float:right;
+        }
+
+
+        .bot .cart {
+            width: 50%;
+  
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+        }
+
+        .top span {
+            /* 그냥 div로 만들면 내려가겟지만 span으로도 가능하다 */
+            display: block;
+        }
+
+        button:hover {
+            background-color: gray;
+       
+        }
+
+        .top, .mid {
+            border:1px solid;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="list">
+        <div class="left">사진</div>
+        <div class="left">  
+            <div class="top">
+                <span>내용:gg</span>
+                <span>sdfsdf</span>
+            </div>
+
+            <div class="mid">
+                <div class="mid_left">가격</div>
+                <div class="mid_right">10000원</div>
+            </div>
+            <div class="bot">
+                <button type="button" class="cart">장바구니</button>
+                <button type="button" class="cart">구매</button>
+            </div>
+        </div>
+        
+
+    </div>
+
+    
+</body>
+</html>

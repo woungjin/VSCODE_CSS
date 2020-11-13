@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style type="text/css">
+    *{margin:0; padding:0;}
+        ul,li{list-style:none;}
+        /* 넓이나 폭을 다시 지정해야하낟 */
+        header {position: fixed; left:0; top: 0; width: 100%; } 
+        /* z-index : 가장 높은 숫자가 맨위로 올라간다 */    
+        header .logo {text-align: center; background-color: whitesmoke; z-index: 10; right: 10px;} 
+        .menu li {display: inline-block; padding: 20px;}
+        .menu {text-align: center; background-color: aliceblue;}
+
+        .menu li a {text-decoration:none;  font-size: x-large ; color: teal;}
+        .menu li:hover {background-color: lightblue;}
+
+        /* 메뉴에 가려져서 헤더높이만큼 margin */
+        section {height: 1000px;  margin-top: 170px; background-color: paleturquoise;}
+
+        .side {position: fixed; right: 5px; top: 400px; z-index: 10;}
+        .side li {z-index: 10; background-color: black; text-align: center; padding: 10px 10px; border-bottom: 1px solid #4d4d4d;}
+        .side li a {
+            text-decoration:none;
+            color: white ;
+            font-size: 12px;
+            display: block; /* a태그안에 p가 들어가기위해선 블럭으로 바꾸어야 한다 */
+            
+        }
+        
+    
+    </style>
+
+</head>
+<body>
+    <header >
+        <div class="logo">
+            <img src="img/bgimg.png" alt="">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        sdfsdfsdf...
+    </section>
+
+    <aside class="side">
+        <ul class="side_list">
+            <li><a href="#">
+                <p>카카오톡</p>
+                <p>kkk123</p>
+                <p>ㅎㅇ</p>
+            </a></li>
+            <li><a href="#">바로가기2</a></li>
+            <li><a href="#">바로가기3</a></li>
+            <li><a href="#">바로가기4</a></li>
+            
+        </ul>
+    </aside>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style type="text/css">
+        *{margin:0 ; padding: 0;}
+        .list {width:50% ; margin:0 auto;} /* 가운데정렬 */
+        .content{position: relative}
+
+        p{height: 100px; border: 1px solid;}
+        .inner1 {background-color: aqua;}
+        .inner2 {background-color: red; 
+                position: absolute;
+                right:100px; 
+                top:50px;
+                width: 70px;
+                height: 70px;}
+
+        .inner3 {background-color: gray;}
+        
+    </style>
+</head>
+<body>
+    <!-- 포지션의 첫번째 규칙: 부모요소에 position:relative에 들어간다 들어가지 않으면 body기준으로 좌표가 잡힌다  -->
+    <!-- left, right 중에 하나 top, bot 중에 하나만 선택해서 박스를 이동시킨다 -->
+    <div class="list">
+        <div class="content">
+            <p class="inner1">포지션1</p>
+            <p class="inner2">포지션2</p>
+            <p class="inner3">포지션3</p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        *{margin:0; padding: 0;}
+        ul ,li {list-style:none;}
+    
+        /* 
+            - float 적용시 문제점 : 부모컨텐츠의 높이가 지정이 안되고 따로놀게됨 
+            - 해결방법 : 
+            1. 가상요소방법
+                : .box-list:after {content ""; dispaly:block; clear:both;}
+            2. 부모요소에 overflow:hidden
+             */
+
+        .box-list {
+            overflow: hidden;
+            width:50%;
+            margin: 0 auto;    /* 중앙에 배치 */
+        }
+
+        .box-list li {
+            float: left;
+            width: 16.6666%;
+            border: 1px solid; /* 박스만의 고정된 크기가 있어서 값이 변경이 안된다  */
+            box-sizing: border-box; /* border의 넓이를 박스의 넓이와 포함시킨다 */
+        }
+    </style>
+
+</head>
+<body>
+    
+    <ul class="box-list">
+        <li>블럭1</li>
+        <li>블럭2</li>
+        <li>블럭3</li>
+        <li>블럭4</li>
+        <li>블럭5</li>
+        <li>블럭6</li>
+        
+    </ul>
+
+</body>
+</html>

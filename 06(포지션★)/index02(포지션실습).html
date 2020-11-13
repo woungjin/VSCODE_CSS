@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        .wrap {width: 900px; overflow: hidden;  margin: 0 auto; }
+        .box {float: left; width:300px; height: 300px; background-color: papayawhip; position: relative;}
+        
+        .pos {
+            background-color: pink;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="wrap">
+        <div class="box">박스1</div>
+        <div class="box">박스1</div>
+        <div class="box">박스1</div>
+        <div class="box">박스1</div>
+
+        <div class="box">
+            박스1
+            <div class="pos">포지션띄울 위치의 박스</div>
+        </div>
+    </section>
+
+</body>
+</html>
