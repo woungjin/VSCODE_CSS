@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        ul li {list-style: none;}
+        *{padding: 0; margin: 0;}
+        a {text-decoration: none; color: white;}
+        body{background-image: url(img/bg.png);}
+        /* 머리 */
+        header .logo {text-align: center; margin: 10px; }
+        header .menu {text-align: center; background-color: black;}
+        header .menu li{ display: inline-block; padding: 20px;}
+        header .menu li a {color: white; text-decoration: none;}
+        header .menu li:hover {background-color:gray;}
+
+        .top {position: fixed; right: 1px; top: 1px; padding: 10px; background-color: red; font}
+
+
+        /* 몸 */
+        article {background-color: white; }
+        article .img_menu {text-align: center; padding: 10px; width: 1000px; margin: 0 auto; overflow: hidden; padding: 30px 0px;}
+        article .img_menu li {float: left ; width: 250px; }   
+
+        section { width: 700px; margin: 0 auto; position: relative;}  
+        section .left {position:absolute; left: -250PX; top: 100px;} /* - : 좌측으로 */
+        section .left img {display : block; padding: 10px;}
+        section .right {position: absolute; right: -250px; top: 100px;}
+        section .right img {display: block; padding: 10px;}
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="https://www.naver.com/"><img src="img/logo.jpg" alt="로고"> </a>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#">메뉴1</a> </li>
+                <li><a href="#">메뉴2</a> </li>
+                <li><a href="#">메뉴3</a> </li>
+                <li><a href="#">메뉴4</a> </li>
+            </ul>
+        </nav>
+        
+    </header>
+
+
+    <article>
+        <ul class="img_menu">
+            <li><a href="#"><img src="img/item01.png"></a> <div>iPhone</div></li>
+            <li><a href="#"><img src="img/item02.png"></a> <div>iPod</div></li>
+            <li><a href="#"><img src="img/item03.png"></a> <div>iPad</div></li>
+            <li><a href="#"><img src="img/item04.png"></a> <div>iMac</div></li>
+         </ul>
+    </article>
+
+    <section>
+        <div class="img_body">
+                <img src="img/ipad.jpg" >
+        </div>
+        <aside class="left">
+            <img src="img/side01.png">
+            <img src="img/side02.png">
+        </aside>
+        <aside class="right">
+            <img src="img/side03.png"> 
+            <img src="img/side04.png">
+
+        </aside>
+    </section>
+
+    <div class="top">
+      <a href="#">TOP</a>  
+    </div>
+
+</body>
+</html>

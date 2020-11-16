@@ -1,0 +1,37 @@
+/* 1. 웹폰트 선택하기 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+/* 2. 디자인 시작시 전역 설정 */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box; /* 박스에 border-box설정 */
+}
+
+body, html {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    min-width: 320px; /* body영역의 최소 사이즈  */
+}
+
+img { /* 이미지 다루기가 쉬워짐 */
+    max-width: 100%; /* 사이즈가 변해도 넓이는 유지가되고 */
+    height: auto; /* 사이즈가 변하면 넓이에 따라서 유지가된다 */
+}
+
+input, textarea, button, select {
+    /* 
+        고유하게 적용되어 있는 form관련 옵션 요소들을 제거해서 
+        여러 브라우저에서 동일한 form관련태그 디자인이 보이도록 처리
+        - webkit- , -moz- , -ms- , -o-
+    */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+ul, li, ol, dl {
+    list-style: none;
+}

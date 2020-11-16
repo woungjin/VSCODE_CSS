@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 참조파일 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- 개인디자인추가  -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <style type="text/css">
+        .my-header {
+            background-color: #263238;
+        }
+
+        .my-header a {
+            color: white;
+            font-size: 17px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 개발자도구에서 디자인 속성을 확인후 nav-inverse 삭제 -->
+
+    <header class="my-header">
+        <nav class="navbar ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/logo.svg" width="30" alt="logo" ></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <!-- 메뉴작성부분 -->
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+                    <!-- 우측 -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">로그인</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">로그인</a></li> 
+                              <li><a href="#">회원가입</a></li>
+                            </ul>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+</body>
+
+</html>

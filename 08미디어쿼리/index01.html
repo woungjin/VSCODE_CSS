@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+       
+        /* 미디어 쿼리는 화면사이즈에 따라서 다르게 동작하도록 처리됨 */
+        /* max : 미만에서 동작*/
+        /* min : 이상에서 동작*/
+        
+        .box2 { width: 100%; margin: 0 auto; overflow: hidden;}
+        
+        /* 1300이상  */
+        @media (min-width: 1300px){
+            .box2 .inner { float: left;  width: 16.6666%; }
+        }
+
+        /* 768 ~ 1299 */
+        @media (max-width: 1299px) and (min-width:768px){
+            .box2 .inner {width: 25%; float: left;}
+        }
+
+        @media (max-width: 767px){
+            .box2 .inner {float: left; width: 50% ;}
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box2">
+        <div class="inner">내용</div>
+        <div class="inner">내용</div>
+        <div class="inner">내용</div>
+        <div class="inner">내용</div>
+        <div class="inner">내용</div>
+        <div class="inner">내용</div>
+    </div>
+
+</body>
+
+</html>
