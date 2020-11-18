@@ -13,16 +13,10 @@
 
     <!-- 개인디자인추가  -->
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <style type="text/css">
-        .my-header {
-            background-color: #263238;
-        }
-
-        .my-header a {
-            color: white;
-            font-size: 17px;
-        }
+        
     </style>
 
 </head>
@@ -34,12 +28,12 @@
         <nav class="navbar ">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><span
+                            class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="img/logo.svg" width="30" alt="logo" ></a>
+                    <a class="navbar-brand" href="#"><img src="img/logo.svg" width="30" alt="logo"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <!-- 메뉴작성부분 -->
@@ -53,16 +47,171 @@
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">로그인</a>
                             <ul class="dropdown-menu">
-                              <li><a href="#">로그인</a></li> 
-                              <li><a href="#">회원가입</a></li>
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
                             </ul>
-                          </li>
+                        </li>
                     </ul>
+                    <form class="navbar-form navbar-right" action="#">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-primary" type="submit">
+                                    검색
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </nav>
         </div>
     </header>
+
+    <!-- 2. 배너영역
+            bs.js jquery.js가 반드시필요하다
+            헤더영역과 겹치지 않도록 margin처리
+        -->
+ 
+        <section class="my-banner">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+    
+                <!-- Wrapper for slides -->
+                <!--  슬라이드 이미지에 a링크 추가 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="#"><img src="img/slide1.jpg" alt="kimchi"></a>
+                    </div>
+    
+                    <div class="item">
+                        <a href="#"><img src="img/slide2.jpg" alt="court"></a>
+                    </div>
+    
+                    <div class="item">
+                        <a href="#"><img src="img/slide3.jpg" alt="Yangnyum"></a>
+                    </div>
+                </div>
+    
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+    
+    
+
+
+    <!-- 3. 오늘의 발견 -->
+
+    <section>
+        <div class="container">
+            <h2>오늘의 발견 <small>ㅣ 쿠팡이 엄선한 상품~</small></h2>
+            <div class="row"><!-- row안에서 col을 어느 div에 쓰든지 상관없다 -->
+                <ul class="col-xs-12 prod-list">    <!-- 윤곽 -->
+                    <li class="col-sm-6">    <!-- 숨긴박스 -->
+                        <a href="#" class="prod-box"> <!-- 윤곽 -->
+                            <img src="img/box1.jpg">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="hover">상세보기 <i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="col-sm-6">
+                        <a href="#" class="prod-box">
+                            <img src="img/box2.jpg">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="hover">상세보기 <i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="col-sm-3 col-md-3">
+                        <a href="#" class="prod-box">
+                            <img src="img/box3.jpg">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="hover">상세보기 <i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="col-sm-3 col-md-3">
+                        <a href="#" class="prod-box">
+                            <img src="img/box4.jpg">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="hover">상세보기 <i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a href="#" class="prod-box">
+                            <img src="img/box5.jpg">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="hover">상세보기 <i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a href="#" class="prod-box">
+                            <img src="img/box6.jpg">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="hover">상세보기 <i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="col-sm-6">
+                        <a href="#" class="prod-box">
+                            <img src="img/box7.jpg">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="hover">상세보기 <i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a href="#" class="prod-box">
+                            <img src="img/box8.jpg">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="hover">상세보기 <i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a href="#" class="prod-box">
+                            <img src="img/box9.jpg">
+                            <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+                            <span class="hover">상세보기 <i class="glyphicon glyphicon-menu-right"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="footer-copyright">
+                        <a href="#"><img src="img/logo.svg" width="20"></a>
+                        Coding404 | 대표자 : 홍길동 | E-MAIL : asdf0817@gmail.com
+                        개인정보보호책임자 : 홍길동 | KG-ITbank에서 오프라인 강의를 진행합니다
+                        주소 : 서울시 강남구
+                        <address>Bootstrap. ALL RIGHT REVERSED</address>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <ul class="footer-menu">
+                        <li><a href="#">유용한정보</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">개인정보 취급방침</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        footer{
+            
+        }
+    </style>
+</head>
+
+<body>
+
+ 
+    <header class="my-header">
+        <nav class="navbar ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><span
+                            class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/logo.svg" width="30" alt="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <!-- 메뉴작성부분 -->
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+                    <!-- 우측 -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">로그인</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right" action="#">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-primary" type="submit">
+                                    검색
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-md-6 login-form">
+                    <!-- 메인이름 -->
+                    <div class="title-box">
+                        로그인
+                    </div>
+                    <!-- 로그인부분 -->
+                    <form >
+                        <div class="form-group"> <!-- 한 입력창마다의 거리 (= margin-bottom) -->
+                            <label >아이디</label>
+                            <!-- form-control - 입력창 내의 텍스트 문자 위치(padding: all ) -->
+                            <input type="password" class="form-control">
+                        </div>
+
+                        <div class="form-group"> <!-- 한 입력창마다의 거리 (= margin-bottom) -->
+                            <label >비밀번호</label>
+                            <!-- form-control - 입력창 내의 텍스트 문자 위치(padding: all ) -->
+                            <input type="password" class="form-control">
+                        </div>
+                        <!-- 버튼 -->
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-block">로그인</button>
+                            <button class="btn btn-info btn-block">회원가입</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="footer-copyright">
+                        <a href="#"><img src="img/logo.svg" width="20"></a>
+                        Coding404 | 대표자 : 홍길동 | E-MAIL : asdf0817@gmail.com
+                        개인정보보호책임자 : 홍길동 | KG-ITbank에서 오프라인 강의를 진행합니다
+                        주소 : 서울시 강남구
+                        <address>Bootstrap. ALL RIGHT REVERSED</address>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <ul class="footer-menu">
+                        <li><a href="#">유용한정보</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">개인정보 취급방침</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

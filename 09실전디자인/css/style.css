@@ -1,0 +1,296 @@
+/* -------- form, btn윤곽 */
+.form-control { border-radius: 0;}
+.btn {border-radius: 0;}
+/* -----헤더영역------- */
+.my-header {
+    background-color: #263238;
+    position: fixed;    /* 화면에고정 */
+    top: 0;             /* 위치 */
+    left: 0;            /* 위치 */
+    width: 100%;        /* 크기 */
+    z-index: 50;   
+}
+section {margin-top: 50px;}
+.my-header a {
+    color: white;     /* 글시색 */
+    font-size: 17px;    
+}
+.navbar-brand {
+    padding: 10px 40px; /* 글씨들과의 거리 */
+}
+.navbar {
+    margin-bottom: 0px; /* 메뉴바와 section과의 거ㅣㄹ */
+}
+/* 가상성택자 요소 색상 변경 */
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background-color: gray; /* 메뉴 a:hover색상 */
+}
+.nav .open>a,
+.nav .open>a:focus,
+.nav .oepn>a:hover {
+    background-color: gray; /* a:hover 색상 */
+}
+.navbar-toggle {
+    border-color: white;
+}
+.navbar-toggle .icon-bar {
+    background-color: white;
+}
+/* -----footer영역----- */
+footer {
+    background-color: #263238;  /* 배경색 */
+    color: white;     /* 글씨 색 */
+    padding: 40px 0;    /* 위 아래 사이즈 */
+    font-size: 14px;    /* 글씨 크기 */
+    margin-top: 70px;   /* section과의 거리 */
+}
+footer a {
+    color: white;
+}
+footer .copy-right address {
+    margin-bottom: 0;
+}
+footer .footer-menu {
+    text-align: right;  
+}
+footer .footer-menu li {
+    display: inline-block;
+    padding: 0 20px;    /* li사이의 거리 */
+}
+.footer .footer-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+/* -----배너영역----- */
+.my-banner {
+ /* 헤더부분과 겹치는것을 없에줌 */
+}
+
+
+.carousel-control.right ,
+.carousel-control.left {
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0, rgba(0,0,0,0) 100%);
+}
+
+/* -----상품 list------  */
+.prod-list, .prod-box {
+    display: block; /* 블럭요소로 변경 */
+    border : 1px solid #ddd;
+    text-align: center; /* 블럭이나 text 가운데 정렬 */
+}
+.prod-list,
+.prod-list > li {
+    padding: 5px; /* 상자끼리의 간격을 조절함 */
+}
+
+.prod-box {position: relative;}
+.prod-box .arrow { 
+    display: block; /* 인라인은 넓이를 줄수없고 그대로 사용해야되서 블럭으로 변경함  */
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    position: absolute; /* 위치기반으로 올릴 부모클래스에 rel */
+    bottom: 20px;
+    left: 15px;
+    background-color: #ccc;
+    color: gray;
+    opacity: 1;
+}
+.prod-box .hover {
+    background-color: steelblue;
+    display: block;
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    font-size: 12px;
+    opacity: 0; /* 투명도  0 and 1 */
+}
+
+/* hover기능시 투명도 조작 */
+.prod-box:hover > .arrow {
+    opacity: 0;
+}
+.prod-box:hover > .hover {
+    opacity: 1;
+}
+.prod-box:hover {
+    border: 1px solid darkturquoise;
+}
+/* --------------------------------------------------------- */
+/* nike style  */
+
+        /* 상품 리스트 */
+        .prod-content {
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .prod-info {
+            float: left;
+        }
+        /* span은 \n이 적용이 안되기에 block으로 */
+        .prod-info span {
+            display: block;
+        }
+        .prod-price {
+            float: right;
+        }
+        /* 이미지를 가운데로 */
+        .prod-img {
+            text-align: center;
+        }
+        /* transition(변경할것, 걸리는시간, 속도, 시간초) */
+        .prod-color {
+            margin-top: -20px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .prod-color ul {
+            overflow: hidden;
+        }
+        .prod-color ul li {
+            float: left;
+        }
+        .prod-content:hover {
+            opacity: 1;
+        }
+        .prod-all:hover>.prod-color {
+            opacity: 1;
+            z-index: 10px;
+        }
+        /* 페이징 */
+        .text-center {overflow: hidden;}
+        .text-center ul {margin: 0;}    /* 글쓰기와의 크기를 맞추기위해 */
+        .text-center button {float: right; padding: 4px 12px;}  /* 버튼을 정렬함 */
+
+
+
+
+    /* --------------------------------------------- */
+    /* nike_detail 미완성ㅇ본 */
+
+    
+        /* 제목 및 내용 부분 */
+        .detail-info .title {font-size: 20px;}
+        .detail-info .content {color: #888; font-size: 15px;}
+        .detail-info .price {border-top: 1px solid #777; border-bottom: 1px solid #777; padding: 10px 0 ; }
+
+        /* 금액부분 */
+        .detail-control .price ,
+        .detail-control .order{
+            overflow: hidden;
+        }
+
+        .detail-control .left {float: left;}
+        .detail-control .right {float: right;}
+
+        /* 글씨조정 (상자 높이에 line-height를 맞춘다) */  
+        .detail-control .price .left {font-size: 15px; line-height: 52px; margin: 0;}
+        .detail-control .price .rigt {font-size: 30px; line-height: 52px; margin: 0;}
+
+        /* 버튼 */
+        .detail-control {padding-top: 147px;}
+        .detail-control .order button {width: 50%; padding: 10px 15px; text-decoration: none;}
+        
+        /* 글작성영역 */
+        .reply-group input {width: 180px; margin-bottom: 5px;}
+        .reply-wrap {
+            background-color: whitesmoke;
+            border: 1px solid#ddd;
+            padding: 20px;
+            position: relative; /* 부모에 relative */
+        }
+        /* 댓글의 이미지 */
+        .reply-img {
+            position: absolute;
+            left: 0px;
+            top:0px;
+            padding:20px;
+        }
+        .reply-content {padding-left: 60px;}
+        .reply-group{
+            overflow: hidden;
+            margin-top: 30px;
+        }
+        .reply-group .left {float: left;}
+        .reply-group button {float: right;}
+        
+        /* 텍스트영역 리사이징 옵션, 애니메이션 */
+        .reply-content textarea {
+            resize: vertical; /* 높이만조절 */
+            height : 100px;
+            transition: height 0.5s ease-in-out;;
+        }
+        .reply-content textarea:focus {
+            height:200px;
+        }
+
+
+        /* 댓글 */
+        .reply-wrap2 {
+            background-color: whitesmoke;
+            border: 1px solid#ddd;
+            padding: 20px;
+            position: relative; /* 부모에 relative */
+            border: 1px solid;
+        }
+        .reply-img2 {
+            position: absolute;
+            left: 0px;
+            top:0px;
+            padding:20px;
+        }
+        .reply-person {
+            padding-left: 50px;
+            overflow: hidden;
+        }
+        .reply-person .left p {float: left;}
+        .reply-person .left .name {padding: 0 10px ;font-size: 20px;}
+        .reply-person .left .regdate { padding: 7px 10px; font-size: 13px; }
+
+
+
+        /* 회원가입 form만들기  */
+        .join-form {
+            /* 하나의 그리드 상자를 정가운데 정렬방법 */ 
+            margin: 0 auto; /* 가운데 정렬이 안되는 이유가 col관련된 클래스 float을 가지고 있기 때문에 */
+            float: none;
+        }
+        /* 제목박스 */
+        .title-box {
+            border-bottom: 1px solid #e1e1e1;
+            width: 250px;
+            margin: 60px auto; /* 박스정렬 */
+            text-align: center; /* 글씨정렬 */
+            padding : 20px 40px; 
+        }
+        .join-form form {
+            border-radius: 12px;
+            /* 부트스트랩 : box-shadow  */
+            box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.335); 
+            padding: 50px;
+        }
+        @media (max-width: 767px) { /* 767미만이라면 (= col-xs가 동작하는거랑 동일) */
+            .join-form form {
+                padding-top: 50px 0;
+            }
+        }
+
+
+        /* -------------로그인 폼 --------------------------- */
+        .login-form {
+            margin:0 auto;
+            float: none;
+            
+        }
+        .login-form form {
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.45);
+            border-radius: 10px;
+            padding : 50px;
+        }
